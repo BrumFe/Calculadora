@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Calculadora
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <div class="container-calculadora">
+            <div class="label-de-conteudo">    
+                <input type="text" id="caixa-de-texto" placeholder="0" disabled>
+            </div>
+
+            <div class="botoes-da-calculadora"> 
+                <button id="7" onclick="getNumber('7')">7</button>
+                <button id="8" onclick="getNumber('8')">8</button>
+                <button id="9" onclick="getNumber('9')">9</button>
+                <button id="OperadorMais" onclick="getOperator('+')">+</button>
+                <button id="4" onclick="getNumber('4')">4</button>
+                <button id="5" onclick="getNumber('5')">5</button>
+                <button id="6" onclick="getNumber('6')">6</button>
+                <button id="OperadorMenos" onclick="getOperator('-')">-</button>
+                <button id="1" onclick="getNumber('1')">1</button>
+                <button id="2" onclick="getNumber('2')">2</button>
+                <button id="3" onclick="getNumber('3')">3</button>
+                <button id="OperadorMultiplicacao" onclick="getOperator('*')">*</button>
+                <button id="Ponto" onclick="verifyAndGetDot('.')">.</button>
+                <button id="0" onclick="getNumber('0')">0</button>   
+                <button id="Clear" onclick="clearInput()">AC</button>
+                <button id="OperadorDivisao" onclick="getOperator('/')">/</button>              
+            </div>
+
+            <div class="sinal-de-igual">
+                <button id="Resultado" onclick="getElements('=')">=</button>
+            </div>
+        </div>
+
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

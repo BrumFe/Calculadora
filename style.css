@@ -1,0 +1,71 @@
+body{
+    background:linear-gradient(48deg,#17a19d,#00e67c);
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover{
+    background-color: #00e67c;
+    border: 1px solid #17a19d;
+}
+
+/* Conteúdo da calculadora */
+.container-calculadora{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+/* Input que mostra os resultados */
+
+.label-de-conteudo{
+    width: 100%;
+    margin: auto;
+}
+
+.label-de-conteudo input[type=text] {
+    width: 90%;
+    padding:4%; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* Div que contem os números da calculardora */
+
+.botoes-da-calculadora{
+    width: 100%;
+    margin-left: 3%;
+}
+
+.botoes-da-calculadora button{
+    display: inline-block;
+    padding: 4%;
+    border:2px solid #ccc;
+    border-radius: 5px;
+    width: 23%;
+    margin-top: 5%;
+}
+
+/* Div Sinal de igual da calculadora */
+
+.sinal-de-igual{
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.sinal-de-igual button{
+    padding: 5%;
+    border:2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
